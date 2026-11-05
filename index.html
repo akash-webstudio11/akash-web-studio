@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Akash Web Studio</title>
+
+    <meta name="description" content="My HTML practice website">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6ff;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #2563eb;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 35px 8%;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+        }
+
+        button {
+            background: #facc15;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        progress {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>AKASH WEB STUDIO</h1>
+        <p>Learn HTML | Build Websites | Create Future</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section class="hero" id="home">
+            <h2>Welcome To My Website</h2>
+
+            <p>
+                HTML is the foundation of web development.
+                Start learning today!
+            </p>
+
+            <button>Explore More</button>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Us</h2>
+
+            <div class="card">
+                <h3>Who We Are?</h3>
+
+                <p>
+                    We are learning
+                    <strong>HTML</strong>,
+                    <b>CSS</b> and
+                    <i>Web Development</i>.
+                </p>
+
+                <p>
+                    Our mission is to
+                    <mark>create beautiful websites</mark>.
+                </p>
+
+                <p>
+                    HTML is <abbr title="HyperText Markup Language">HTML</abbr>.
+                </p>
+
+                <blockquote>
+                    "Learning never stops."
+                </blockquote>
+
+                <p>
+                    <del>Old Design</del>
+                    <ins>New Design</ins>
+                </p>
+
+                <p>Water formula: H<sub>2</sub>O</p>
+                <p>Square: 5<sup>2</sup> = 25</p>
+
+                <hr>
+
+                <p>
+                    This is a <small>small text</small>.
+                    <u>Underlined text</u>.
+                </p>
+
+                <pre>
+Welcome to
+Akash Web Studio
+                </pre>
+
+                <p>
+                    HTML code:
+                    <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+                </p>
+
+                <details>
+                    <summary>What is HTML?</summary>
+                    <p>HTML is used to create web page structure.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <article class="card">
+                <h3>Web Designing</h3>
+                <p>We create beautiful web page designs.</p>
+            </article>
+
+            <article class="card">
+                <h3>HTML Development</h3>
+                <p>We build websites using HTML.</p>
+            </article>
+
+            <article class="card">
+                <h3>CSS Designing</h3>
+                <p>We make websites attractive.</p>
+            </article>
+
+            <h3>Our Skills</h3>
+
+            HTML:
+            <progress value="90" max="100"></progress>
+
+            CSS:
+            <progress value="70" max="100"></progress>
+
+            <p>Project completion:
+                <meter value="7" min="0" max="10"></meter>
+            </p>
+        </section>
+
+        <!-- LIST SECTION -->
+        <section>
+            <h2>Learning Topics</h2>
+
+            <h3>Unordered List</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Ordered List</h3>
+
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+            </ol>
+
+            <h3>Description List</h3>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>Structure of website.</dd>
+
+                <dt>CSS</dt>
+                <dd>Design of website.</dd>
+            </dl>
+        </section>
+
+        <!-- TABLE -->
+        <section>
+            <h2>Student Details</h2>
+
+            <table>
+                <caption>Student Information</caption>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Akash</td>
+                        <td>HTML</td>
+                        <td>95</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rahul</td>
+                        <td>CSS</td>
+                        <td>85</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total Students</td>
+                        <td>2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery">
+            <h2>My Gallery</h2>
+
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900"
+                    alt="Computer and web development workspace">
+
+                <figcaption>
+                    My Web Development Workspace
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- MEDIA -->
+        <section>
+            <h2>Audio and Video</h2>
+
+            <h3>Audio Player</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+            <h3>Video Player</h3>
+            <video controls width="300">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name"
+                        name="name" placeholder="Enter your name"
+                        required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                        name="email" placeholder="Enter email">
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone"
+                        name="phone">
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age"
+                        name="age" min="1" max="100">
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+
+                    <label for="course">Select Course:</label>
+
+                    <select id="course" name="course">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                    </select>
+
+                    <p>Gender:</p>
+
+                    <input type="radio" id="male"
+                        name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female"
+                        name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <p>
+                        <input type="checkbox" id="agree"
+                            name="agree">
+                        <label for="agree">I agree</label>
+                    </p>
+
+                    <label for="message">Message:</label>
+
+                    <textarea id="message" name="message"
+                        rows="4"
+                        placeholder="Write your message"></textarea>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <aside class="card">
+        <h3>Did You Know?</h3>
+        <p>HTML stands for HyperText Markup Language.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Akash Web Studio</p>
+        <p>All Rights Reserved.</p>
+
+        <address>
+            Created by Akash Sharma
+        </address>
+
+        <a href="#home" style="color:white">Back to Top</a>
+    </footer>
+
+</body>
+</html>
